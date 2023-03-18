@@ -6,7 +6,15 @@
 
 <header class="header">
 	<div class="nav">
-		<div class="nav-logo" on:click={() => goto('/')}>Home</div>
+		<div class="nav-logo" on:click={() => goto('/')}>
+			<svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+				<rect x="0" y="0" width="40" height="40" fill="#ff6b6b" />
+				<rect x="5" y="5" width="30" height="30" fill="#ffffff" />
+				<circle cx="20" cy="20" r="8" fill="#ff6b6b" />
+				<path d="M 20 23 L 26 29" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+				<path d="M 20 23 L 14 29" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+			</svg>
+		</div>
 		<div class="nav-items">
 			{#each navItems as item}
 				<div class="nav-item" on:click={() => goto(item.path)}>{item.label}</div>
@@ -40,12 +48,12 @@
 
 <style>
 	header {
-		--primary-color: #2c3e50;
-		--accent-color: #f1c40f;
-		--nav-bg-color: #232d37;
-		--text-color: #ffe2e2;
-		--text-hover-color: #1c1717;
-		--item-hover-bg-color: #f1c40f;
+		--primary-color: #3f3f3f;
+		--accent-color: #ffffff;
+		--nav-bg-color: #85aacf;
+		--text-color: #3f3f3f;
+		--text-hover-color: #3f3f3f;
+		--item-hover-bg-color: #ff8e76;
 	}
 
 	.header {
