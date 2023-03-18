@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { tripleWordFlicksterData } from './tripleWordFlicksterData';
+	import { tripleWordFlicksterData } from './data';
 
 	let words: string[] = [];
 	let answer: string = '';
@@ -102,7 +102,6 @@
 
 	.container {
 		min-height: 90vh;
-		margin: 1vh;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
